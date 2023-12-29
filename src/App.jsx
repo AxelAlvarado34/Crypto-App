@@ -24,8 +24,6 @@ function App() {
 
   }, [dataInfo])
 
-  console.log(fullData);
-
   return (
     <div>
       <Formulary
