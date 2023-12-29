@@ -19,7 +19,9 @@ function App() {
   }
 
   useEffect(() => {
+    
     getData()
+
   }, [dataInfo])
 
   console.log(fullData);
@@ -35,7 +37,7 @@ function App() {
         spinner ? <Spinner/> : null
       }
 
-      <div className="flex justify-center items-center card-div">
+      <div className="flex justify-center items-center card-div" >
         {
           Object.keys(dataInfo).length > 0 && !spinner ? <Information fullData={fullData} /> : null
         }
